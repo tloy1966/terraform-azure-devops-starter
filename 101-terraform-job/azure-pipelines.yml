@@ -11,7 +11,21 @@ variables:
 - group: terraform-secrets
 
 stages:
-
+- stage: stage1
+  jobs:
+    - job: 
+      steps:
+      
+      - task: Bash@3
+        inputs:
+            targetType: 'inline'
+            script: |
+              # Write your commands here
+              
+              echo 'Hello world'
+              echo $appname
+              echo ${appname}
+              echo env
 - template: terraform-stages-template.yml
   parameters:
     environment: test
