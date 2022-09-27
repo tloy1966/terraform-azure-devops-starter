@@ -10,7 +10,7 @@ trigger:
 variables:
 - group: terraform-secrets
 
-
+stages:
 - template: terraform-stages-template.yml
   parameters:
     environment: test
