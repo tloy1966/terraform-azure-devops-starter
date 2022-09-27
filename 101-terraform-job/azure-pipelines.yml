@@ -2,7 +2,7 @@ pr: none
 trigger:
   branches:
     include:
-    - dev
+    - master
   paths:
     include:
     - 101-terraform-job/
